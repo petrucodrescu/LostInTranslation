@@ -47,7 +47,7 @@ public class JSONTranslator implements Translator {
             for (int i = 0; i < jsonArray.length(); i++) {
 
                 JSONObject countryData = jsonArray.getJSONObject(i);
-                String countryCode = countryData.getString("alpha3");
+                String countryCode = countryData.getString("alpha3").toUpperCase();
 
                 List<String> languages = new ArrayList<>();
 
